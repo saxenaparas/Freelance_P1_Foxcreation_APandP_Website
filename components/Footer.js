@@ -1,3 +1,5 @@
+import { Link } from "lucide-react";
+import Image from "next/image";
 export default function Footer() {
   return (
     <footer className="section-footer">
@@ -9,11 +11,11 @@ export default function Footer() {
                 <div className="col col-xl-4">
                   <div className="footer-logo-container">
                     <div className="logo-container-footer">
-                      <img src="/images/marko-logo.png" alt="Logo" className="site-logo img-fluid" />
+                      <Image src="/images/shared-image.png" width={100} height={100} alt="Logo" className="site-logo img-fluid" />
                     </div>
                     <h4>Driving Digital Growth with Innovation & Strategy</h4>
                     <p>
-                      Lorem ipsum dolor si consectetur adipiscing elit ut elit tellus luctus nec ullamcorper mattis pulvinar dapibus leo.
+                     Your next solution starts here. Connect with AP&A SYSTEM by filling out the contact form today.
                     </p>
                   </div>
                 </div>
@@ -21,12 +23,11 @@ export default function Footer() {
                   <div className="footer-quick-links">
                     <h5>Quick Links</h5>
                     <ul className="footer-list">
-                      <li><a href="/">Home</a></li>
+                      <li><Link href="/">Home</Link></li>
                       <li><a href="/about">About Us</a></li>
-                      <li><a href="/service">Service</a></li>
-                      <li><a href="/case_studies">Case Studies</a></li>
-                      <li><a href="/blog">Blog</a></li>
+                      <li><a href="/services">Service</a></li>
                       <li><a href="/contact">Contact Us</a></li>
+                      <li><a href="/blog">Blogs</a></li>
                     </ul>
                   </div>
                 </div>
@@ -34,12 +35,12 @@ export default function Footer() {
                   <div className="footer-services-container">
                     <h5>Services</h5>
                     <ul className="footer-list">
-                      <li><a href="/single_services">Social Media Marketing</a></li>
-                      <li><a href="/single_services">SEO Optimization</a></li>
-                      <li><a href="/single_services">PPC Advertising</a></li>
-                      <li><a href="/single_services">Content Marketing</a></li>
-                      <li><a href="/single_services">Branding Strategy</a></li>
-                      <li><a href="/single_services">Email Marketing</a></li>
+                      <li><a href="/services">Social Media Management</a></li>
+                      <li><a href="/services">HR Recruitement</a></li>
+                      <li><a href="/services">Branding & Marketing</a></li>
+                      <li><a href="/services">Digital Marketing</a></li>
+                      <li><a href="/services">Annual Support Maintainance</a></li>
+                      <li><a href="/services">IT Solutions</a></li>
                     </ul>
                   </div>
                 </div>
@@ -47,33 +48,32 @@ export default function Footer() {
                   <div className="footer-contact-container">
                     <h5>Contact Info</h5>
                     <ul className="contact-list">
-                      <li>hello@markoagency.com</li>
-                      <li>+1 234 567 890</li>
-                      <li>123 Digital Street, New York, USA</li>
+                      <li>info@apasystemllp.com</li>
+                      <li>+91 9006016444</li>
+                      <li>AP&A SYSTEM,
+                        Tajvag Pokhra, Hajipur, Vaishali, Bihar-844101</li>
                     </ul>
                     <div className="d-flex flex-column gspace-1">
                       <h5>Social Media</h5>
                       <div className="social-container">
                         <div className="social-item-wrapper">
-                          <a href="https://facebook.com" className="social-item">
-                            <i className="fa-brands fa-facebook"></i>
-                          </a>
-                        </div>
-                        <div className="social-item-wrapper">
-                          <a href="https://youtube.com" className="social-item">
+                          <a href="https://www.youtube.com/@apasystemofficial" className="social-item">
                             <i className="fa-brands fa-youtube"></i>
                           </a>
                         </div>
-                        <div className="social-item-wrapper">    
+                          <div className="social-item-wrapper">
+                          <a href="https://www.linkedin.com/company/ap-a-systemllp/posts/?feedView=all" className="social-item">
+                            <i className="fa-brands fa-linkedin"></i>
+                          </a>
+                        </div>
+                     
+                        
+                        <div className="social-item-wrapper">
                           <a href="https://instagram.com" className="social-item">
                             <i className="fa-brands fa-instagram"></i>
                           </a>
                         </div>
-                        <div className="social-item-wrapper">
-                          <a href="https://linkedin.com" className="social-item">
-                            <i className="fa-brands fa-linkedin"></i>
-                          </a>
-                        </div>
+                
                       </div>
                     </div>
                   </div>
@@ -82,7 +82,7 @@ export default function Footer() {
               <div className="footer-content-spacer"></div>
             </div>
             <div className="copyright-container">
-              <span className="copyright">© 2025 Marko. Fox Creation All Rights Reserved.</span>
+              <span className="copyright">copyright  © 2025 <bold>AP&A SYSTEM</bold> All Rights Reserved.</span>
               <div className="d-flex flex-row gspace-2">
                 <a href="#" className="legal-link">Terms of Service</a>
                 <a href="#" className="legal-link">Privacy Policy</a>

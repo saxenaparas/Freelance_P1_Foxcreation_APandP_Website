@@ -5,7 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Home - Digital Marketing Agency',
+  title: 'AP&A Systems',
   description: 'Your digital marketing partner for growth and success',
   icons: {
     icon: '/favicon.ico',
