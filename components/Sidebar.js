@@ -57,7 +57,7 @@ export default function Sidebar() {
                 <li><a href="/single_services">Service Details</a></li>
               </ul>
             </li>              
-            <li className="sidebar-dropdown">
+         {  /* <li className="sidebar-dropdown">
               <div className="dropdown-header">
                 <a href="#">Pages</a>
                 <button 
@@ -91,7 +91,7 @@ export default function Sidebar() {
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/single_post">Single Post</a></li>
               </ul>
-            </li>  
+            </li>  */}
             <li className="below-dropdown"><a href="/contact">Contact Us</a></li>
           </ul>
         </div>

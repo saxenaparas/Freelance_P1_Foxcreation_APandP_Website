@@ -1,19 +1,22 @@
 'use client'; // This is needed because we'll use interactivity
 
 import { useState } from 'react';
+import Image from 'next/image';
+import { Link } from 'lucide-react';
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <header>
-      <div className="navbar-wrapper">
+      <div className="navbar-wrapper bg-slate-500">
         <nav className="navbar navbar-expand-xl">
-          <div className="navbar-container">
+          <div className="navbar-container ">
             <div className="logo-container">
               <a className="navbar-brand" href="/">
-                <img src="/images/marko-logo.png" className="site-logo img-fluid" alt="Marko Logo" />
+                <Image src="/images/shared-image.png" width={300} height={300} className="site-logo img-fluid" alt="Marko Logo" />
               </a>
+              
             </div>
             <button 
               className="navbar-toggler nav-btn" 
@@ -31,16 +34,12 @@ export default function Header() {
                 <li className="nav-item">
                   <a className="nav-link" href="/about">About</a>
                 </li>
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" role="button">
-                    Services <i className="fa-solid fa-angle-down accent-color"></i>
+                <li className="nav-item ">
+                  <a className="nav-link" href="/services" >
+                    Services
                   </a>
-                  <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="/service">Service</a></li>
-                    <li><a className="dropdown-item" href="/single_services">Single Services</a></li>
-                  </ul>
                 </li>
-                <li className="nav-item dropdown">
+            {/*   <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" role="button">
                     Pages <i className="fa-solid fa-angle-down accent-color"></i>
                   </a>
@@ -53,8 +52,8 @@ export default function Header() {
                     <li><a className="dropdown-item" href="/faq">FAQs</a></li>
                     <li><a className="dropdown-item" href="/404">Error 404</a></li>
                   </ul>
-                </li>
-                <li className="nav-item dropdown">
+                </li>   
+              <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" role="button">
                     Archive <i className="fa-solid fa-angle-down accent-color"></i>
                   </a>
@@ -62,9 +61,12 @@ export default function Header() {
                     <li><a className="dropdown-item" href="/blog">Blog</a></li>
                     <li><a className="dropdown-item" href="/single_post">Single Post</a></li>
                   </ul>
-                </li>
+                </li>   */}  
                 <li className="nav-item">
                   <a className="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="/blog">Blogs</a>
                 </li>
               </ul>
             </div>
@@ -78,7 +80,7 @@ export default function Header() {
                 <div className="icon-circle">
                   <i className="fa-solid fa-phone-volume"></i>
                 </div>
-                <h6>+1 (62) 987 7543</h6>
+                <h6> +91 9006016444</h6>
               </div>
             </div>
           </div>
