@@ -132,3 +132,13 @@ const page = () => {
 }
 
 export default page
+
+
+
+export const metadata = {
+  title: 'AP&A Systems - Blogs Page',
+  description: 'Your digital marketing partner for growth and success',
+  icons: {
+    icon: '/favicon.ico',
+  },
+};

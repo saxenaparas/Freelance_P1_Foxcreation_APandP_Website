@@ -23,14 +23,19 @@ export default function Contact() {
 
                   {/* Phone */}
                   <div className="d-flex flex-column flex-md-row align-items-center text-md-start text-center gspace-2">
-                    <div className="icon-wrapper">
-                      <div className="icon-box">
-                        <i className="fa-solid fa-phone-volume accent-color" />
-                      </div>
+                   <div className="icon-wrapper">
+                    <a href="https://wa.me/919006016444" target="_blank" rel="noreferrer">
+                      <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                        alt="WhatsApp"
+                        width="40"
+                        height="40"
+                      />
+                    </a>
                     </div>
                     <div className="d-grid">
                       <span>Phone Number</span>
-                      <h5>+91 9006016444</h5>
+                      <h5>+919006016444</h5>
                     </div>
                   </div>
 
@@ -144,7 +149,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
 
       {/* Section Maps */}
       <div className="section pt-0">
@@ -165,3 +170,12 @@ export default function Contact() {
     </>
   );
 }
+
+
+export const metadata = {
+  title: 'AP&A Systems - Contacts Page',
+  description: 'Your digital marketing partner for growth and success',
+  icons: {
+    icon: '/favicon.ico',
+  },
+};

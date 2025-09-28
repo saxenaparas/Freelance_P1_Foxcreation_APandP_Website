@@ -1127,7 +1127,7 @@ export default function Home() {
                           <i className="fa-solid fa-3x fa-quote-right accent-color" />
                         </div>
                         <p className="testimonial-description">
-                          “Marko completely transformed our online presence! Their
+                          “AP&A completely transformed our online presence! Their
                           digital marketing strategies helped us double our revenue
                           in just six months.”
                         </p>

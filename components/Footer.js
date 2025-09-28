@@ -28,6 +28,9 @@ export default function Footer() {
                       <li><a href="/services">Service</a></li>
                       <li><a href="/contact">Contact Us</a></li>
                       <li><a href="/blog">Blogs</a></li>
+                      <li><a href="/terms-conditions">Terms and conditions</a></li>
+                      <li><a href="/privacypolicy">Privacy Policy</a></li>
+                      <li><a href="/cookie">cookie Policy</a></li>
                     </ul>
                   </div>
                 </div>

@@ -32,9 +32,7 @@ export default function Sidebar() {
         <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} onClick={() => setIsSidebarOpen(false)}></div>
         <div className={`sidebar ${isSidebarOpen ? 'active' : ''}`}>
           <div className="sidebar-header">
-            <div className="logo">
-              <img src="/images/marko-logo.png" className="site-logo img-fluid logo" alt="Logo" />
-            </div>
+         
             <button className="close-btn" onClick={() => setIsSidebarOpen(false)}>
               <span>X</span>
             </button>
@@ -42,21 +40,10 @@ export default function Sidebar() {
           <ul className="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-            <li className="sidebar-dropdown">
-              <div className="dropdown-header">
-                <a href="#">Services</a>
-                <button 
-                  className="sidebar-dropdown-btn"
-                  onClick={() => toggleDropdown('services')}
-                >
-                  <i className="fa-solid fa-angle-down"></i>
-                </button>
-              </div>
-              <ul className={`sidebar-dropdown-menu ${openDropdown === 'services' ? 'active' : ''}`}>
-                <li><a href="/service">Service</a></li>
-                <li><a href="/single_services">Service Details</a></li>
-              </ul>
-            </li>              
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact us</a></li>
+            
+                       
          {  /* <li className="sidebar-dropdown">
               <div className="dropdown-header">
                 <a href="#">Pages</a>
@@ -92,7 +79,6 @@ export default function Sidebar() {
                 <li><a href="/single_post">Single Post</a></li>
               </ul>
             </li>  */}
-            <li className="below-dropdown"><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
       </div>

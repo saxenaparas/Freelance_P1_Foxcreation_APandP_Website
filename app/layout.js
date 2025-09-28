@@ -1,11 +1,15 @@
-// import './globals.css';
+ import './globals.css';
 
 import Script from 'next/script';
 import Header from '@/components/Header';
+import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
+//import { Sidebar } from 'lucide-react';
+
 
 export const metadata = {
-  title: 'AP&A Systems',
+  title: 'AP&A SYSTEMS',
   description: 'Your digital marketing partner for growth and success',
   icons: {
     icon: '/favicon.ico',
@@ -22,6 +26,7 @@ export default function RootLayout({ children }) {
       <body>
 
         <Header />
+        <Sidebar/>
         {children}
         <Footer />
 
