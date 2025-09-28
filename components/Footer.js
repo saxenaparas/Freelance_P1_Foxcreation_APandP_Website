@@ -11,7 +11,7 @@ export default function Footer() {
                 <div className="col col-xl-4">
                   <div className="footer-logo-container">
                     <div className="logo-container-footer">
-                      <Image src="/images/shared-image.png" width={100} height={100} alt="Logo" className="site-logo img-fluid" />
+                      <Image src="/images/marko-logo.png" width={100} height={100} alt="Logo" className="site-logo img-fluid" />
                     </div>
                     <h4>Driving Digital Growth with Innovation & Strategy</h4>
                     <p>
