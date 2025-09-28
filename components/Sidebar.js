@@ -16,7 +16,7 @@ export default function Sidebar() {
         <div className="content-overlay">
           <div className="content-edit-sidebar">
             <div className="sidebar-header">
-              <div></div>
+       
               <div className="close-btn-second">
                 <i className="fa-solid fa-xmark"></i>
               </div>
@@ -32,7 +32,9 @@ export default function Sidebar() {
         <div className={`sidebar-overlay ${isSidebarOpen ? 'active' : ''}`} onClick={() => setIsSidebarOpen(false)}></div>
         <div className={`sidebar ${isSidebarOpen ? 'active' : ''}`}>
           <div className="sidebar-header">
-         
+            <div className="logo">
+              <img src="/images/apa.png" className="site-logo img-fluid logo" alt="Logo" />
+            </div>
             <button className="close-btn" onClick={() => setIsSidebarOpen(false)}>
               <span>X</span>
             </button>
@@ -40,45 +42,9 @@ export default function Sidebar() {
           <ul className="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Services</a></li>
-            <li><a href="/contact">Contact us</a></li>
-            
-                       
-         {  /* <li className="sidebar-dropdown">
-              <div className="dropdown-header">
-                <a href="#">Pages</a>
-                <button 
-                  className="sidebar-dropdown-btn"
-                  onClick={() => toggleDropdown('pages')}
-                >
-                  <i className="fa-solid fa-angle-down"></i>
-                </button>
-              </div>
-              <ul className={`sidebar-dropdown-menu ${openDropdown === 'pages' ? 'active' : ''}`}>
-                <li><a href="/case_studies">Case Studies</a></li>
-                <li><a href="/team">Our Team</a></li>
-                <li><a href="/partnership">Partnership</a></li>
-                <li><a href="/pricing">Pricing Plan</a></li>
-                <li><a href="/testimonial">Testimonial</a></li>
-                <li><a href="/faq">FAQs</a></li>
-                <li><a href="/404">Error 404</a></li>
-              </ul>
-            </li>  
-            <li className="sidebar-dropdown">
-              <div className="dropdown-header">
-                <a href="#">Archive</a>
-                <button 
-                  className="sidebar-dropdown-btn"
-                  onClick={() => toggleDropdown('archive')}
-                >
-                  <i className="fa-solid fa-angle-down"></i>
-                </button>
-              </div>
-              <ul className={`sidebar-dropdown-menu ${openDropdown === 'archive' ? 'active' : ''}`}>
-                <li><a href="/blog">Blog</a></li>
-                <li><a href="/single_post">Single Post</a></li>
-              </ul>
-            </li>  */}
+           <li><a href='/services'>Services</a></li>           
+           <li><a href="/contact">Contact Us</a></li>
+           <li><a href="/projects">Our Projects</a></li>
           </ul>
         </div>
       </div>
