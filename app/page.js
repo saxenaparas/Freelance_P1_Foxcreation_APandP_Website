@@ -166,10 +166,10 @@ export default function Home() {
                   data-animate="animate__fadeInUp"
                 >
                   <div className="d-flex flex-row gspace-2 align-items-center">
-                    <div className="d-flex flex-row align-items-center">
+                 {/*   <div className="d-flex flex-row align-items-center">
                       <span className="counter" data-target={21} />
                       <span className="counter-detail">+</span>
-                    </div>
+                    </div>  */}
                     <h6>Years of Experience on Digital Marketing Services</h6>
                   </div>
                   <p>

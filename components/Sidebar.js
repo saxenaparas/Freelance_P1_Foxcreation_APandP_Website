@@ -16,7 +16,7 @@ export default function Sidebar() {
         <div className="content-overlay">
           <div className="content-edit-sidebar">
             <div className="sidebar-header">
-       
+
               <div className="close-btn-second">
                 <i className="fa-solid fa-xmark"></i>
               </div>
@@ -33,7 +33,7 @@ export default function Sidebar() {
         <div className={`sidebar ${isSidebarOpen ? 'active' : ''}`}>
           <div className="sidebar-header">
             <div className="logo">
-              <img src="/images/apa.png" className="site-logo img-fluid logo" alt="Logo" />
+              <img src="/images/marko-logo.png" className="site-logo img-fluid" alt="Marko Logo" />
             </div>
             <button className="close-btn" onClick={() => setIsSidebarOpen(false)}>
               <span>X</span>
@@ -42,12 +42,15 @@ export default function Sidebar() {
           <ul className="menu">
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
-           <li><a href='/services'>Services</a></li>           
-           <li><a href="/contact">Contact Us</a></li>
-           <li><a href="/projects">Our Projects</a></li>
+            <li><a href='/services'>Services</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/projects">Our Products</a></li>
+            <li><a href="/career">Careers</a></li>
           </ul>
         </div>
       </div>
     </>
   );
 }
+
+

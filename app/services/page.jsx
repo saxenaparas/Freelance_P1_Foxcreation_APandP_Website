@@ -1,8 +1,11 @@
-import React from 'react'
+'use client';
+
+import React from 'react';
+import Link from 'next/link';
 
 const page = () => {
   return (
-   <div className="card-service-wrapper">
+    <div className="card-service-wrapper">
 
       <div className="section-banner">
         <div className="banner-layout-wrapper">
@@ -27,169 +30,182 @@ const page = () => {
         </div>
       </div>
 
-      {/* ✅ Updated row wrapper with centering */}
+      {/* ✅ Services Grid */}
       <div className="row row-cols-xl-3 row-cols-md-2 row-cols-1 grid-spacer-2 justify-content-center text-center g-4">
 
+        {/* Social Media Management */}
         <div className="col">
-          <div
-            className="card card-service animate-box animated slow animate__animated"
-            data-animate="animate__fadeInLeft"
-          >
-            <div className="d-flex flex-column align-items-center text-center gap-3">
-              <div className="service-icon-wrapper">
-                <div className="service-icon">
-                  <img
-                    src="/images/Icon-7.png"
-                    alt="Service Icon"
-                    className="img-fluid"
-                  />
+          <Link href="/services/social-media-management">
+            <div
+              className="card card-service animate-box animated slow animate__animated"
+              data-animate="animate__fadeInLeft"
+            >
+              <div className="d-flex flex-column align-items-center text-center gap-3">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">
+                    <img
+                      src="/images/Icon-7.png"
+                      alt="Service Icon"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="service-title">
+                  <h4>Social Media Management</h4>
                 </div>
               </div>
-              <div className="service-title">
-                <h4>Social Media Management</h4>
-              </div>
+              <p>
+                Data-driven social media strategies to grow engagement, boost visibility, and build lasting connections.
+              </p>
             </div>
-            <p>
-              Data-driven social media strategies to grow engagement, boost visibility, and build lasting connections.
-            </p>
-          </div>
+          </Link>
         </div>
 
+        {/* Digital Marketing */}
         <div className="col">
-          <div
-            className="card card-service animate-box animated animate__animated"
-            data-animate="animate__fadeInLeft"
-          >
-            <div className="d-flex flex-column align-items-center text-center gap-3">
-              <div className="service-icon-wrapper">
-                <div className="service-icon">
-                  <img
-                    src="/images/digital-marketing-icons-F4LJ4W8.png"
-                    alt="Service Icon"
-                    className="img-fluid"
-                  />
+          <Link href="/services/digital-marketing">
+            <div
+              className="card card-service animate-box animated animate__animated"
+              data-animate="animate__fadeInLeft"
+            >
+              <div className="d-flex flex-column align-items-center text-center gap-3">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">
+                    <img
+                      src="/images/digital-marketing-icons-F4LJ4W8.png"
+                      alt="Service Icon"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="service-title">
+                  <h4>Digital Marketing</h4>
                 </div>
               </div>
-              <div className="service-title">
-                <h4>Digital Marketing</h4>
-              </div>
+              <p>
+                Creative digital campaigns powered by analytics to maximize reach, impact, and measurable ROI.
+              </p>
             </div>
-            <p>
-              Creative digital campaigns powered by analytics to maximize reach, impact, and measurable ROI.
-            </p>
-          </div>
+          </Link>
         </div>
 
+        {/* HR & Recruitment */}
         <div className="col">
-          <div
-            className="card card-service animate-box animated fast animate__animated"
-            data-animate="animate__fadeInLeft"
-          >
-            <div className="d-flex flex-column align-items-center text-center gap-3">
-              <div className="service-icon-wrapper">
-                <div className="service-icon">
-                  <img
-                    src="/images/Icon-8.png"
-                    alt="Service Icon"
-                    className="img-fluid"
-                  />
+          <Link href="/services/hr-recruitment">
+            <div
+              className="card card-service animate-box animated fast animate__animated"
+              data-animate="animate__fadeInLeft"
+            >
+              <div className="d-flex flex-column align-items-center text-center gap-3">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">
+                    <img
+                      src="/images/Icon-8.png"
+                      alt="Service Icon"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="service-title">
+                  <h4>HR & Recruitement</h4>
                 </div>
               </div>
-              <div className="service-title">
-                <h4>HR & Recruitement</h4>
-              </div>
+              <p>
+                Smart recruitment solutions that connect top talent with the right opportunities and drive workforce efficiency.
+              </p>
             </div>
-            <p>
-              Smart recruitment solutions that connect top talent with the right opportunities and drive workforce efficiency.
-            </p>
-          </div>
+          </Link>
         </div>
 
+        {/* Branding & Marketing */}
         <div className="col">
-          <div
-            className="card card-service animate-box animated slow animate__animated"
-            data-animate="animate__fadeInLeft"
-          >
-            <div className="d-flex flex-column align-items-center text-center gap-3">
-              <div className="service-icon-wrapper">
-                <div className="service-icon">
-                  <img
-                    src="/images/Icon-5.png"
-                    alt="Service Icon"
-                    className="img-fluid"
-                  />
+          <Link href="/services/branding-marketing">
+            <div
+              className="card card-service animate-box animated slow animate__animated"
+              data-animate="animate__fadeInLeft"
+            >
+              <div className="d-flex flex-column align-items-center text-center gap-3">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">
+                    <img
+                      src="/images/Icon-5.png"
+                      alt="Service Icon"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="service-title">
+                  <h4>Branding & Marketing</h4>
                 </div>
               </div>
-              <div className="service-title">
-                <h4>Branding & Marketing</h4>
-              </div>
+              <p>
+                Impactful branding strategies that boost your presence, engage your audience, and accelerate growth.
+              </p>
             </div>
-            <p>
-              Impactful branding strategies that boost your presence, engage your audience, and accelerate growth.
-            </p>
-          </div>
+          </Link>
         </div>
 
+        {/* Annual Support & Maintenance */}
         <div className="col">
-          <div
-            className="card card-service animate-box animated animate__animated"
-            data-animate="animate__fadeInLeft"
-          >
-            <div className="d-flex flex-column align-items-center text-center gap-3">
-              <div className="service-icon-wrapper">
-                <div className="service-icon">
-                  <img
-                    src="/images/Icon-6.png"
-                    alt="Service Icon"
-                    className="img-fluid"
-                  />
+          <Link href="/services/annual-support-maintenance">
+            <div
+              className="card card-service animate-box animated animate__animated"
+              data-animate="animate__fadeInLeft"
+            >
+              <div className="d-flex flex-column align-items-center text-center gap-3">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">
+                    <img
+                      src="/images/Icon-6.png"
+                      alt="Service Icon"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="service-title">
+                  <h4>Annual Support Maintainance</h4>
                 </div>
               </div>
-              <div className="service-title">
-                <h4>Annual Support Maintainance</h4>
-              </div>
+              <p>
+                Reliable year-round IT support and proactive maintenance to keep your systems running smoothly.
+              </p>
             </div>
-            <p>
-              Reliable year-round IT support and proactive maintenance to keep your systems running smoothly.
-            </p>
-          </div>
+          </Link>
         </div>
 
+        {/* IT Solutions */}
         <div className="col">
-          <div
-            className="card card-service animate-box animated fast animate__animated"
-            data-animate="animate__fadeInLeft"
-          >
-            <div className="d-flex flex-column align-items-center text-center gap-3">
-              <div className="service-icon-wrapper">
-                <div className="service-icon">
-                  <img
-                    src="/images/Icon-4.png"
-                    alt="Service Icon"
-                    className="img-fluid"
-                  />
+          <Link href="/services/it-solutions">
+            <div
+              className="card card-service animate-box animated fast animate__animated"
+              data-animate="animate__fadeInLeft"
+            >
+              <div className="d-flex flex-column align-items-center text-center gap-3">
+                <div className="service-icon-wrapper">
+                  <div className="service-icon">
+                    <img
+                      src="/images/Icon-4.png"
+                      alt="Service Icon"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div className="service-title">
+                  <h4>IT Solutions</h4>
                 </div>
               </div>
-              <div className="service-title">
-                <h4>IT Solutions</h4>
-              </div>
+              <p>
+                Secure, scalable, and intelligent IT solutions that power digital transformation and business growth.
+              </p>
             </div>
-            <p>
-              Secure, scalable, and intelligent IT solutions that power digital transformation and business growth.
-            </p>
-          </div>
+          </Link>
         </div>
+
       </div>
     </div>
-  )
-}
-
-export default page
-
-export const metadata = {
-  title: 'AP&A Systems - Services Page',
-  description: 'Your digital marketing partner for growth and success',
-  icons: {
-    icon: '/favicon.ico',
-  },
+  );
 };
+
+
+
+export default page;
