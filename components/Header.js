@@ -12,9 +12,9 @@ export default function Header() {
         <nav className="navbar navbar-expand-xl">
           <div className="navbar-container">
             <div className="logo-container">
-              <Link className="navbar-brand" href="/">
+              <a className="navbar-brand" href="/">
                 <img src="/images/marko-logo.png" className="site-logo img-fluid" alt="Marko Logo" />
-              </Link>
+              </a>
             </div>
             <button 
               className="navbar-toggler nav-btn" 

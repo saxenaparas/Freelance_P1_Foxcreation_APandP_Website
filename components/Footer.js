@@ -23,10 +23,11 @@ export default function Footer() {
                   <div className="footer-quick-links">
                     <h5>Quick Links</h5>
                     <ul className="footer-list">
-                      <li><Link href="/">Home</Link></li>
+                      <li><a href="/">Home</a></li>
                       <li><a href="/about">About Us</a></li>
                       <li><a href="/services">Service</a></li>
                       <li><a href="/contact">Contact Us</a></li>
+                      <li><a href="/career">Careers</a></li>
                       <li><a href="/blog">Blogs</a></li>
                       <li><a href="/terms-conditions">Terms and conditions</a></li>
                       <li><a href="/privacypolicy">Privacy Policy</a></li>
