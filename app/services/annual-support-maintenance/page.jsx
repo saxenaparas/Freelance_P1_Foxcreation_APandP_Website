@@ -33,8 +33,20 @@ export default function AnnualSupportMaintenancePage() {
         {/* How We Deliver */}
         <div className="row g-4 text-center">
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🛠️</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🛠️
+              </div>
               <h5>Proactive System Maintenance</h5>
               <p>
                 Regular check-ups, upgrades, and optimizations to prevent issues before they impact performance — 
@@ -42,9 +54,22 @@ export default function AnnualSupportMaintenancePage() {
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">⚡</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                ⚡
+              </div>
               <h5>Real-Time Support</h5>
               <p>
                 Whether it's a minor glitch or a major disruption, our expert support team is always ready to respond quickly 
@@ -52,9 +77,22 @@ export default function AnnualSupportMaintenancePage() {
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🔒</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🔒
+              </div>
               <h5>Security & Reliability</h5>
               <p>
                 We safeguard your operations through regular security audits, backups, and fail-safe mechanisms 
@@ -72,7 +110,11 @@ export default function AnnualSupportMaintenancePage() {
             With our annual maintenance and support plans, you gain more than service — 
             you gain a trusted technology partner focused on your uptime and success.
           </p>
-          <a href="/contact" className="btn btn-primary mt-3 px-4 py-2 rounded-pill">
+          <a
+            href="/contact"
+            className="btn btn-primary mt-3 px-4 py-2 rounded-pill d-inline-flex justify-content-center text-center w-auto"
+            style={{ minWidth: '220px' }}
+          >
             Contact Our Experts
           </a>
         </div>

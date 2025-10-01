@@ -33,8 +33,20 @@ export default function HRRecruitmentPage() {
         {/* How We Deliver */}
         <div className="row g-4 text-center">
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🧭</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🧭
+              </div>
               <h5>Targeted Talent Acquisition</h5>
               <p>
                 We use data-driven methods and in-depth market insights to source and attract top talent 
@@ -42,9 +54,22 @@ export default function HRRecruitmentPage() {
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🤝</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🤝
+              </div>
               <h5>End-to-End Recruitment</h5>
               <p>
                 From job profiling and screening to interviews and onboarding, 
@@ -52,9 +77,22 @@ export default function HRRecruitmentPage() {
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🌐</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🌐
+              </div>
               <h5>Strategic Workforce Planning</h5>
               <p>
                 Our team aligns hiring strategies with your growth roadmap to ensure sustainable scaling 
@@ -72,7 +110,11 @@ export default function HRRecruitmentPage() {
             From startups to enterprises, our strategic approach ensures you get the talent 
             you need to drive your vision forward.
           </p>
-          <a href="/contact" className="btn btn-primary mt-3 px-4 py-2 rounded-pill">
+          <a
+            href="/contact"
+            className="btn btn-primary mt-3 px-4 py-2 rounded-pill d-inline-flex justify-content-center text-center w-auto"
+            style={{ minWidth: '220px' }}
+          >
             Contact Our Experts
           </a>
         </div>

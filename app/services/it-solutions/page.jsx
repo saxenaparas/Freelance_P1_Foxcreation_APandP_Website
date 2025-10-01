@@ -32,8 +32,20 @@ export default function ITSolutionsPage() {
         {/* How We Deliver */}
         <div className="row g-4 text-center">
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">💻</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                💻
+              </div>
               <h5>End-to-End Infrastructure</h5>
               <p>
                 We build secure, scalable IT infrastructures that power businesses of all sizes — ensuring stability, 
@@ -41,9 +53,22 @@ export default function ITSolutionsPage() {
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">☁️</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                ☁️
+              </div>
               <h5>Cloud & Digital Transformation</h5>
               <p>
                 Migrate, modernize, and innovate with our cloud-native solutions designed to accelerate business agility 
@@ -51,9 +76,22 @@ export default function ITSolutionsPage() {
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🛡️</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🛡️
+              </div>
               <h5>Security & Compliance</h5>
               <p>
                 Our IT solutions are built with enterprise-grade security frameworks to keep your data safe 
@@ -68,9 +106,13 @@ export default function ITSolutionsPage() {
           <h3 className="mb-3">Transform Your Business with AP&A SYSTEMS 🚀</h3>
           <p className="mx-auto" style={{ maxWidth: '600px' }}>
             Whether you're upgrading infrastructure, adopting cloud solutions, or future-proofing your digital ecosystem — 
-            <strong>AP&A SYSTEMS</strong> is your trusted IT partner. Let’s build intelligent systems that grow with you.
+            <strong> AP&A SYSTEMS </strong> is your trusted IT partner. Let’s build intelligent systems that grow with you.
           </p>
-          <a href="/contact" className="btn btn-primary mt-3 px-4 py-2 rounded-pill">
+          <a
+            href="/contact"
+            className="btn btn-primary mt-3 px-4 py-2 rounded-pill d-inline-flex justify-content-center text-center w-auto"
+            style={{ minWidth: '220px' }}
+          >
             Contact Our Experts
           </a>
         </div>

@@ -2,8 +2,6 @@
 
 import React from 'react';
 
-
-
 export default function DigitalMarketingPage() {
   return (
     <div className="single-service-page">
@@ -33,26 +31,64 @@ export default function DigitalMarketingPage() {
         {/* How We Deliver */}
         <div className="row g-4 text-center">
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">📈</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                📈
+              </div>
               <h5>Data-Driven Strategies</h5>
               <p>
                 Every campaign starts with in-depth research, analytics, and strategy to ensure your brand stands out and scales effectively.
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🚀</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🚀
+              </div>
               <h5>Scalable Campaigns</h5>
               <p>
                 We design marketing solutions that grow with your business — from startups to enterprises, delivering consistent impact.
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🤝</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🤝
+              </div>
               <h5>Expert Execution</h5>
               <p>
                 With years of experience in SEO, PPC, and content marketing, our team ensures flawless execution and measurable ROI.
@@ -68,7 +104,11 @@ export default function DigitalMarketingPage() {
             Partner with <strong>AP&A SYSTEMS</strong> to build data-driven campaigns that inspire action and deliver impact. 
             Whether you want to scale your audience, increase conversions, or build brand trust — we’ll make it happen.
           </p>
-          <a href="/contact" className="btn w-[0.5%] btn-primary mt-3 px-4 py-2 rounded-pill">
+          <a
+            href="/contact"
+            className="btn btn-primary mt-3 px-4 py-2 rounded-pill d-inline-flex justify-content-center text-center w-auto"
+            style={{ minWidth: '220px' }}
+          >
             Contact Our Experts
           </a>
         </div>

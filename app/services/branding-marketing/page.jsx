@@ -32,8 +32,20 @@ export default function BrandingMarketingPage() {
         {/* How We Deliver */}
         <div className="row g-4 text-center">
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🎨</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🎨
+              </div>
               <h5>Strategic Brand Identity</h5>
               <p>
                 We craft meaningful brand strategies and visual identities that reflect your values, vision, and personality — 
@@ -41,9 +53,22 @@ export default function BrandingMarketingPage() {
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">📢</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                📢
+              </div>
               <h5>Integrated Marketing Campaigns</h5>
               <p>
                 From content to social to performance ads — we build cohesive campaigns that amplify your brand's reach, 
@@ -51,9 +76,22 @@ export default function BrandingMarketingPage() {
               </p>
             </div>
           </div>
+
           <div className="col-md-4">
-            <div className="card h-100 p-4 shadow-sm">
-              <div className="service-icon mb-3">🚀</div>
+            <div className="card h-100 p-4 shadow-sm d-flex flex-column align-items-center">
+              <div
+                className="service-icon mb-3 d-flex align-items-center justify-content-center mx-auto"
+                style={{
+                  width: '60px',
+                  height: '60px',
+                  fontSize: '30px',
+                  borderRadius: '12px',
+                  background: '#111',
+                  color: 'white',
+                }}
+              >
+                🚀
+              </div>
               <h5>Growth-Focused Positioning</h5>
               <p>
                 Our data-driven strategies position your brand to capture attention, build loyalty, and 
@@ -70,7 +108,11 @@ export default function BrandingMarketingPage() {
             Partner with <strong>AP&A SYSTEMS</strong> to create a brand that people love and remember. 
             With a blend of creativity, strategy, and technology, we'll make your brand stand out in the digital landscape.
           </p>
-          <a href="/contact" className="btn btn-primary mt-3 px-4 py-2 rounded-pill">
+          <a
+            href="/contact"
+            className="btn btn-primary mt-3 px-4 py-2 rounded-pill d-inline-flex justify-content-center text-center w-auto"
+            style={{ minWidth: '220px' }}
+          >
             Contact Our Experts
           </a>
         </div>
