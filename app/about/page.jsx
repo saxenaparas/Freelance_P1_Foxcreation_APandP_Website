@@ -182,7 +182,7 @@ const page = () => {
                                             </div>
                                         </div>
                                         <div className="team-profile mt-3">
-                                            <h4>Puja Kumari</h4>
+                                            <h4>Puja Singh</h4>
                                             <span className="title">Chief Executive Officer</span>
                                         </div>
                                     </div>

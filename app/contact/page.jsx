@@ -1,6 +1,37 @@
+'use client';
+
+import { useState } from "react";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 export default function Contact() {
+  const [status, setStatus] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("loading");
+
+    const formData = new FormData(e.target);
+
+    try {
+      const res = await fetch("/api/sendEmail", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await res.json();
+
+      if (data.success) {
+        setStatus("success");
+        e.target.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      console.error("Error:", err);
+      setStatus("error");
+    }
+  };
+
   return (
     <>
       {/* Section Contact */}
@@ -16,7 +47,6 @@ export default function Contact() {
                     <span>Reach out to us</span>
                   </div>
                   <h2 className="title-heading">Get in Touch</h2>
-              
 
                   {/* Phone */}
                   <div className="d-flex flex-column flex-md-row align-items-center text-md-start text-center gspace-2">
@@ -62,29 +92,31 @@ export default function Contact() {
 
             {/* Contact Form */}
             <div className="col col-xl-7">
-              <div id="success-message" className="alert success hidden">
-                <span className="check-icon">
-                  <i className="fa-solid fa-2xl fa-check" />
-                </span>
-                <p>Thank you! Form submitted successfully.</p>
-              </div>
+              {status === "success" && (
+                <div className="alert success mb-3">
+                  <p>✅ Thank you! Form submitted successfully.</p>
+                </div>
+              )}
+              {status === "loading" && (
+                <div className="alert info mb-3">
+                  <p>Sending...</p>
+                </div>
+              )}
+              {status === "error" && (
+                <div className="alert error mb-3">
+                  <p>❌ Something went wrong. Please try again.</p>
+                </div>
+              )}
+
               <div className="form-layout-wrapper">
                 <div className="card form-layout">
-                  <h3 className="title-heading">
-                    Let's Talk About Your Next Project
-                  </h3>
-                  <form
-                    action="/successMessage"
-                    method="post"
-                    id="contactForm"
-                    className="form"
-                  >
+                  <h3 className="title-heading">Let's Talk About Your Next Project</h3>
+                  <form onSubmit={handleSubmit} className="form">
                     <div className="row row-cols-md-2 row-cols-1 g-3">
                       <div className="col">
                         <input
                           type="text"
                           name="first-name"
-                          id="first-name"
                           placeholder="First Name"
                           required
                         />
@@ -93,7 +125,6 @@ export default function Contact() {
                         <input
                           type="text"
                           name="last-name"
-                          id="last-name"
                           placeholder="Last Name"
                           required
                         />
@@ -105,7 +136,6 @@ export default function Contact() {
                         <input
                           type="email"
                           name="email"
-                          id="email"
                           placeholder="Email Address"
                           required
                         />
@@ -114,7 +144,6 @@ export default function Contact() {
                         <input
                           type="number"
                           name="phone"
-                          id="phone"
                           placeholder="Phone Number"
                         />
                       </div>
@@ -123,7 +152,7 @@ export default function Contact() {
                     {/* Dropdowns */}
                     <div className="row row-cols-md-2 row-cols-1 g-3">
                       <div className="col">
-                        <select name="service" id="service" required>
+                        <select name="service" required>
                           <option value="">How can we help?</option>
                           <option value="web-dev">
                             Web Application Development Services
@@ -144,36 +173,18 @@ export default function Contact() {
                           <option value="other-business">
                             Other Business Services
                           </option>
-                          <option value="feedback">
-                            Feedback
-                          </option>
+                          <option value="feedback">Feedback</option>
                         </select>
                       </div>
 
                       <div className="col">
-                        <select name="country" id="country" required>
+                        <select name="country" required>
                           <option value="">Select Your Country</option>
-                          {/* 🌍 All Countries */}
                           {[
-                            "Afghanistan","Albania","Algeria","Andorra","Angola","Argentina","Armenia","Australia","Austria","Azerbaijan",
-                            "Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bhutan","Bolivia",
-                            "Bosnia and Herzegovina","Botswana","Brazil","Brunei","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada",
-                            "Cape Verde","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo","Costa Rica","Croatia",
-                            "Cuba","Cyprus","Czech Republic","Denmark","Djibouti","Dominica","Dominican Republic","Ecuador","Egypt","El Salvador",
-                            "Estonia","Eswatini","Ethiopia","Fiji","Finland","France","Gabon","Gambia","Georgia","Germany",
-                            "Ghana","Greece","Grenada","Guatemala","Guinea","Guyana","Haiti","Honduras","Hungary","Iceland",
-                            "India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan",
-                            "Kazakhstan","Kenya","Kiribati","Kuwait","Kyrgyzstan","Laos","Latvia","Lebanon","Lesotho","Liberia",
-                            "Libya","Liechtenstein","Lithuania","Luxembourg","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta",
-                            "Mauritania","Mauritius","Mexico","Moldova","Monaco","Mongolia","Montenegro","Morocco","Mozambique","Myanmar",
-                            "Namibia","Nauru","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","North Korea","North Macedonia",
-                            "Norway","Oman","Pakistan","Palau","Panama","Papua New Guinea","Paraguay","Peru","Philippines","Poland",
-                            "Portugal","Qatar","Romania","Russia","Rwanda","Saint Kitts and Nevis","Saint Lucia","Samoa","San Marino","Saudi Arabia",
-                            "Senegal","Serbia","Seychelles","Sierra Leone","Singapore","Slovakia","Slovenia","Solomon Islands","Somalia","South Africa",
-                            "South Korea","Spain","Sri Lanka","Sudan","Suriname","Sweden","Switzerland","Syria","Taiwan","Tajikistan",
-                            "Tanzania","Thailand","Togo","Tonga","Trinidad and Tobago","Tunisia","Turkey","Turkmenistan","Tuvalu","Uganda",
-                            "Ukraine","United Arab Emirates","United Kingdom","United States","Uruguay","Uzbekistan","Vanuatu","Vatican City","Venezuela","Vietnam",
-                            "Yemen","Zambia","Zimbabwe"
+                            "India", "United States", "United Kingdom", "Australia", "Canada",
+                            "Germany", "France", "Japan", "China", "Brazil", "Singapore",
+                            "United Arab Emirates", "Italy", "Spain", "South Africa", "Nepal",
+                            "Bangladesh", "Pakistan", "Sri Lanka", "Malaysia"
                           ].map((country) => (
                             <option key={country} value={country}>
                               {country}
@@ -185,15 +196,18 @@ export default function Contact() {
 
                     <textarea
                       name="message"
-                      id="message"
                       rows={5}
                       placeholder="Message"
-                    />
+                    ></textarea>
 
                     <div className="form-button-container">
-                      <button type="submit" className="btn btn-accent">
+                      <button
+                        type="submit"
+                        className="btn btn-accent"
+                        disabled={status === "loading"}
+                      >
                         <span className="btn-title">
-                          <span>Send a Message</span>
+                          {status === "loading" ? "Sending..." : "Send a Message"}
                         </span>
                         <span className="icon-circle">
                           <i className="fa-solid fa-arrow-right" />
@@ -228,10 +242,10 @@ export default function Contact() {
   );
 }
 
-export const metadata = {
-  title: 'AP&A Systems - Contacts Page',
-  description: 'Your digital marketing partner for growth and success',
-  icons: {
-    icon: '/favicon.ico',
-  },
-};
+// export const metadata = {
+//   title: 'AP&A Systems - Contacts Page',
+//   description: 'Your digital marketing partner for growth and success',
+//   icons: {
+//     icon: '/favicon.ico',
+//   },
+// };
