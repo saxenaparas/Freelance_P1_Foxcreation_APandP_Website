@@ -22,7 +22,7 @@ export async function POST(req) {
     // Create transporter
     const transporter = nodemailer.createTransport({
       host: process.env.NODE_HOST,
-      port: 465,
+      port: Number(process.env.NODE_PORT), // 465
       secure: true,
       auth: {
         user: process.env.NODE_USER,
@@ -58,7 +58,7 @@ export async function POST(req) {
     // Send email
     await transporter.sendMail({
       from: `"AP&A SYSTEM Website" <${process.env.NODE_USER}>`,
-      to: "parassaxenaofficial@gmail.com", // change to your main inbox if needed
+      to: `"AP&A SENDING Website" <${process.env.NODE_SENDING_USER}>`, // change to your main inbox if needed
       subject,
       html: htmlMessage,
       attachments,
