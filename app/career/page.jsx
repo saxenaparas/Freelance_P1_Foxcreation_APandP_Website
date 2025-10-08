@@ -54,7 +54,7 @@ export default function Careers() {
                   <li>Passionate learners eager to explore and innovate</li>
                 </ul>
                 <div className="link-wrapper">
-                  <a href="/internship">Get Started Now</a>
+                  <a href="/internship">Apply Now</a>
                   <i className="fa-solid fa-arrow-circle-right" />
                 </div>
               </div>
