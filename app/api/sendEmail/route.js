@@ -58,7 +58,7 @@ export async function POST(req) {
     // Send email
     await transporter.sendMail({
       from: `"AP&A SYSTEM Website" <${process.env.NODE_USER}>`,
-      to: `"AP&A SENDING Website" <${process.env.NODE_SENDING_USER}>`, // change to your main inbox if needed
+      to: process.env.NODE_SENDING_USER, // change to your main inbox if needed
       subject,
       html: htmlMessage,
       attachments,
